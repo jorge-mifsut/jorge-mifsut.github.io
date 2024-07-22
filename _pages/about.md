@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: 
+title: "Home"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-### Hello! I´m Jorge 👋🏼
+### Hello! I'm Jorge 👋🏼
 
 🧑🏻‍💻I am a first year PhD student at Sorbonne Université in Paris 🇫🇷, in the Institut des Systèmes Intelligents et de Robotique (ISIR). My research focuses on Machine Learning surrogate methods for modeling Dynamical Systems.
 
