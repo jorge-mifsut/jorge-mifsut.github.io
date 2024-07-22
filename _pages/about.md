@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Home"
+title: "🌌"
 author_profile: true
 redirect_from: 
   - /about/
@@ -24,6 +24,6 @@ Prior to my PhD, I obtained a BSc in Physics from the University of Valencia, Sp
 
 Other scientific topics which I'm interested in but that are not part of my PhD work are:
 
-- Astrophysics
-- Quantum Computing
+- Astrophysics 🪐
+- Quantum Computing ⚛️
 
