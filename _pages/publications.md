@@ -5,6 +5,9 @@ permalink: /publications/
 author_profile: true
 ---
 
+- Armand Kassaï Koupaï, <u> Jorge Mifsut Benet </u>, Yuan Yin, Jean-Noël Vittaut, Patrick Gallinari. ***"GEPS: Boosting Generalization in Parametric PDE Neural Solvers through Adaptive Conditioning"***. The 38th Annual Conference on Neural Information Processing Systems, NeurIPS (2024). [arXiv:2410.23889](https://doi.org/10.48550/arXiv.2410.23889)
+
+
  - (Master's Thesis): <u> Jorge Mifsut Benet </u>, supervised by Jonathan C. Tan, ***"Machine Learning for Protostellar Image Fitting. A Convolutional Neural Network Approach"*** (2023) Chalmers University of Technology
 [http://hdl.handle.net/20.500.12380/306675](http://hdl.handle.net/20.500.12380/306675)
 
