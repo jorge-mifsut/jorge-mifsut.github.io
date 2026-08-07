@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="design_doc_mode" content="canvas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Serif:wght@400;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,wght@0,400;0,600;1,400&amp;family=Work+Sans:wght@400;500;600&amp;family=Bricolage+Grotesque:wght@400;600;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <style>
+    body { margin: 0; background: #e5e1d8; }
+    a { color: inherit; }
+  </style>
+</helmet>
+
+<div style="padding:64px 48px;display:flex;flex-direction:column;gap:56px;font-family:Inter,sans-serif;">
+
+<section style="display:flex;flex-direction:column;gap:20px;">
+  <h2 style="margin:0;font-size:20px;color:#3a352c;">Turn 17 — 16a across desktop, tablet, and mobile widths</h2>
+  <p style="margin:0;max-width:680px;font-size:14px;line-height:1.5;color:#6b6558;">Desktop: content sits in a centered column with breathing room either side, rather than filling edge-to-edge — nothing feels cramped at wide widths. Tablet: photo moves under the text. Mobile: single column, nav collapses to a simple row, name block wraps naturally.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;">
+
+    <!-- 17a desktop -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="17a" style="background:#241f16;color:#fff;font:600 12px/1 monospace;padding:4px 8px;border-radius:4px;">17a</span>
+        <span style="font-size:15px;font-weight:600;color:#3a352c;">Desktop, 1440px — centered content column</span>
+      </div>
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" url="jorgemifsut.com" width="1440" height="980" hint-size="1440px,980px">
+        <div style="width:1440px;min-height:980px;background:linear-gradient(150deg,#faf6ee 0%,#f5e5d8 45%,#e2e3e8 100%);color:#241f16;font-family:'Space Mono',monospace;position:relative;overflow:hidden;">
+          <canvas ref="{{ noiseRef }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.9;pointer-events:none;"></canvas>
+          <div style="position:relative;">
+            <canvas ref="{{ caScrollRef }}" data-color="rgba(48,48,72,0.24)" style="position:absolute;top:0;left:0;width:100%;height:260px;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%);pointer-events:none;"></canvas>
+            <div style="position:relative;max-width:1180px;margin:0 auto;padding:24px 32px 0;">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <a href="#" style="font:800 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(250,246,238,0.85);color:#241f16;padding:5px 12px;border-radius:20px;border:3px solid #ff6b4a;text-decoration:none;">About</a>
+                <nav style="display:flex;gap:24px;font-size:13px;color:#241f16;background:rgba(250,246,238,0.85);padding:9px 18px;border-radius:20px;border:3px solid #ff6b4a;">
+                  <a href="CV.dc.html">CV</a><a href="Publications.dc.html">Publications</a><a href="Blog.dc.html">Blog</a><a href="Misc.dc.html">Misc</a>
+                </nav>
+              </div>
+              <div style="padding:56px 0 0;display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:start;">
+                <div>
+                  <h1 style="font:800 56px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 18px;"><span style="background:#ff6b4a;color:#241f16;padding:2px 10px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">Jorge Mifsut Benet</span></h1>
+                  <p style="font-size:14px;margin:0 0 22px;color:#4a453c;">PHD CANDIDATE — ISIR, SORBONNE UNIVERSITÉ, PARIS</p>
+                  <p style="font-family: Inter,sans-serif; font-size: 16px; line-height: 1.65; margin: 0 0 24px; color: #241f16; max-width: 480px; width: 538px; height: 133px">Machine-learning surrogate methods for dynamical systems: generative models, chaotic dynamics, uncertainty quantification, fluid dynamics, weather forecasting. <br>Previously: BSc Physics (Valencia), MSc Complex Adaptive Systems (Chalmers).</p>
+                  <div style="display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px;">
+                    <span style="font-size:12px;border:2px solid #241f16;padding:5px 11px;font-family:'Space Mono',monospace;">AI4PHYSICS</span>
+                    <span style="font-size:12px;border:2px solid #241f16;padding:5px 11px;font-family:'Space Mono',monospace;">BIFURCATIONS &amp; CHAOS</span>
+                    <span style="font-size:12px;border:2px solid #241f16;padding:5px 11px;font-family:'Space Mono',monospace;">UQ</span>
+                    <span style="font-size:12px;border:2px solid #241f16;padding:5px 11px;font-family:'Space Mono',monospace;">GENERATIVE MODELS</span>
+                  </div>
+                  <div style="font-family:Inter,sans-serif;font-size:13px;color:#4a453c;">Email · Scholar · ORCID · GitHub · LinkedIn · X</div>
+                </div>
+                <div style="border:3px solid #241f16;box-shadow:7px 7px 0 #303048;background:rgba(255,255,255,0.55);padding:8px;">
+                  <img src="uploads/1707048372541 copy Background Removed-3ff5b64d.png" style="width:100%;height:340px;object-fit:cover;display:block;">
+                </div>
+              </div>
+<div style="margin-top:64px;display:flex;gap:32px;align-items:flex-start;">
+                <div style="flex:1;min-width:0;">
+                  <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:20px;">
+                    <h2 style="font:800 16px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">News</h2>
+                    <div style="flex:1;height:2px;background:#241f16;opacity:0.15;"></div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:16px;">
+                    <div><span style="display:block;font-family:'Space Mono',monospace;font-size:11px;color:#ff6b4a;margin-bottom:3px;">AUG 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;line-height:1.45;color:#241f16;">News item goes here</span></div>
+                    <div><span style="display:block;font-family:'Space Mono',monospace;font-size:11px;color:#ff6b4a;margin-bottom:3px;">JUN 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;line-height:1.45;color:#241f16;">News item goes here</span></div>
+                    <div><span style="display:block;font-family:'Space Mono',monospace;font-size:11px;color:#ff6b4a;margin-bottom:3px;">MAR 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;line-height:1.45;color:#241f16;">News item goes here</span></div>
+                  </div>
+                </div>
+                <div style="flex:1;min-width:0;">
+                <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:20px;">
+                  <h2 style="font:800 16px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">Selected Works</h2>
+                  <div style="flex:1;height:2px;background:#241f16;opacity:0.15;"></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:16px;">
+                  <a href="Publications.dc.html" style="border:3px solid #241f16;background:rgba(255,255,255,0.7);box-shadow:6px 6px 0 rgba(36,31,22,0.9);text-decoration:none;color:inherit;display:flex;gap:0;overflow:hidden;">
+                    <img src="uploads/quad.gif" style="width:90px;height:90px;flex:0 0 90px;object-fit:contain;display:block;background:#000;">
+                    <div style="padding:12px 14px;min-width:0;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;line-height:1.3;">TORNADO: Adaptive Latent Stochastic Transport for Calibrated Probabilistic PDE Forecasting</span></div>
+                  </a>
+                  <a href="Publications.dc.html" style="border:3px solid #241f16;background:rgba(255,255,255,0.7);box-shadow:6px 6px 0 rgba(36,31,22,0.9);text-decoration:none;color:inherit;display:flex;gap:0;overflow:hidden;">
+                    <img src="uploads/animated_pred_ci_km_flow_cone_km_flow_42_alldet_2026-01-22T11-43-08.gif" style="width:90px;height:90px;flex:0 0 90px;object-fit:contain;display:block;background:#000;">
+                    <div style="padding:12px 14px;min-width:0;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;line-height:1.3;">Adaptive SDE Interpolants for Calibrated Probabilistic PDE Forecasting</span></div>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width:1180px;margin:44px auto 0;box-sizing:border-box;"><div style="width:100%;height:2px;background:#241f16;opacity:0.15;"></div></div>
+          <canvas ref="{{ gliderGunRef }}" data-color="rgba(48,48,72,0.7)" style="position:relative;width:100%;height:46px;display:block;margin-top:26px;"></canvas>
+        </div>
+      </x-import>
+    </div>
+
+    <!-- 17b tablet -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="17b" style="background:#241f16;color:#fff;font:600 12px/1 monospace;padding:4px 8px;border-radius:4px;">17b</span>
+        <span style="font-size:15px;font-weight:600;color:#3a352c;">Tablet, 834px — photo drops below text</span>
+      </div>
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" url="jorgemifsut.com" width="834" height="1180" hint-size="834px,1180px">
+        <div style="width:834px;min-height:1180px;background:linear-gradient(150deg,#faf6ee 0%,#f5e5d8 45%,#e2e3e8 100%);color:#241f16;font-family:'Space Mono',monospace;position:relative;overflow:hidden;">
+          <canvas ref="{{ noiseRef }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.9;pointer-events:none;"></canvas>
+          <div style="position:relative;">
+            <canvas ref="{{ caScrollRef }}" data-color="rgba(48,48,72,0.26)" style="position:absolute;top:0;left:0;width:100%;height:220px;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%);pointer-events:none;"></canvas>
+            <div style="position:relative;padding:28px 32px 0;text-align:center;">
+              <div style="display:flex;justify-content:space-between;align-items:center;text-align:left;">
+                <a href="#" style="font:800 14px 'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(250,246,238,0.85);color:#241f16;padding:4px 10px;border-radius:20px;border:3px solid #ff6b4a;text-decoration:none;">About</a>
+                <nav style="display:flex;gap:16px;font-size:12px;color:#241f16;background:rgba(250,246,238,0.85);padding:7px 14px;border-radius:20px;border:3px solid #ff6b4a;">
+                  <a href="CV.dc.html">CV</a><a href="Publications.dc.html">Publications</a><a href="Blog.dc.html">Blog</a><a href="Misc.dc.html">Misc</a>
+                </nav>
+              </div>
+              <div style="padding:44px 0 0;">
+                <h1 style="font:800 42px/1.08 'Bricolage Grotesque',sans-serif;margin:0 0 14px;"><span style="background:#ff6b4a;color:#241f16;padding:2px 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">Jorge Mifsut Benet</span></h1>
+                <p style="font-size:13px;margin:0 0 18px;color:#4a453c;">PHD CANDIDATE — ISIR, SORBONNE UNIVERSITÉ, PARIS</p>
+                <p style="font-family:Inter,sans-serif;font-size:15px;line-height:1.6;margin:0 auto 20px;color:#241f16;max-width:560px;">Machine-learning surrogate methods for dynamical systems: physics-aware neural networks, chaotic dynamics, bifurcations, uncertainty quantification. Previously: BSc Physics (Valencia), MSc Complex Adaptive Systems (Chalmers).</p>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:22px;">
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">AI4PHYSICS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">BIFURCATIONS &amp; CHAOS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">UQ</span>
+                    <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">GENERATIVE MODELS</span>
+                </div>
+                <div style="font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;margin-bottom:28px;">Email · Scholar · ORCID · GitHub · LinkedIn · X</div>
+                <div style="border:3px solid #241f16;box-shadow:6px 6px 0 #303048;background:rgba(255,255,255,0.55);padding:8px;max-width:260px;margin:0 auto;">
+                  <img src="uploads/1707048372541 copy Background Removed-3ff5b64d.png" style="width:100%;height:210px;object-fit:cover;display:block;">
+                </div>
+              </div>
+<div style="margin-top:48px;display:flex;gap:24px;align-items:flex-start;text-align:left;">
+                <div style="flex:1;min-width:0;">
+                  <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:14px;">
+                    <h2 style="font:800 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">News</h2>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:12px;">
+                    <div><span style="display:block;font-family:'Space Mono',monospace;font-size:10.5px;color:#ff6b4a;margin-bottom:2px;">AUG 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:11.5px;line-height:1.4;color:#241f16;">News item goes here</span></div>
+                    <div><span style="display:block;font-family:'Space Mono',monospace;font-size:10.5px;color:#ff6b4a;margin-bottom:2px;">JUN 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:11.5px;line-height:1.4;color:#241f16;">News item goes here</span></div>
+                    <div><span style="display:block;font-family:'Space Mono',monospace;font-size:10.5px;color:#ff6b4a;margin-bottom:2px;">MAR 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:11.5px;line-height:1.4;color:#241f16;">News item goes here</span></div>
+                  </div>
+                </div>
+                <div style="flex:1;min-width:0;">
+                <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:18px;">
+                  <h2 style="font:800 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">Selected Works</h2>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:14px;">
+                  <a href="Publications.dc.html" style="border:3px solid #241f16;background:rgba(255,255,255,0.7);box-shadow:5px 5px 0 rgba(36,31,22,0.9);text-decoration:none;color:inherit;display:flex;gap:0;overflow:hidden;">
+                    <img src="uploads/quad.gif" style="width:66px;height:66px;flex:0 0 66px;object-fit:contain;display:block;background:#000;">
+                    <div style="padding:9px 11px;min-width:0;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:11.5px;line-height:1.3;">TORNADO: Adaptive Latent Stochastic Transport for Calibrated Probabilistic PDE Forecasting</span></div>
+                  </a>
+                  <a href="Publications.dc.html" style="border:3px solid #241f16;background:rgba(255,255,255,0.7);box-shadow:5px 5px 0 rgba(36,31,22,0.9);text-decoration:none;color:inherit;display:flex;gap:0;overflow:hidden;">
+                    <img src="uploads/animated_pred_ci_km_flow_cone_km_flow_42_alldet_2026-01-22T11-43-08.gif" style="width:66px;height:66px;flex:0 0 66px;object-fit:contain;display:block;background:#000;">
+                    <div style="padding:9px 11px;min-width:0;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:11.5px;line-height:1.3;">Adaptive SDE Interpolants for Calibrated Probabilistic PDE Forecasting</span></div>
+                  </a>
+                  </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:0 32px;box-sizing:border-box;margin-top:38px;"><div style="width:100%;height:2px;background:#241f16;opacity:0.15;"></div></div>
+          <canvas ref="{{ gliderGunRef }}" data-color="rgba(48,48,72,0.7)" style="position:relative;width:100%;height:44px;display:block;margin-top:22px;"></canvas>
+        </div>
+      </x-import>
+    </div>
+
+    <!-- 17c mobile -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="17c" style="background:#241f16;color:#fff;font:600 12px/1 monospace;padding:4px 8px;border-radius:4px;">17c</span>
+        <span style="font-size:15px;font-weight:600;color:#3a352c;">Mobile, 390px — single column</span>
+      </div>
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" url="jorgemifsut.com" width="390" height="1180" hint-size="390px,1180px">
+        <div style="width:390px;min-height:1180px;background:linear-gradient(150deg,#faf6ee 0%,#f5e5d8 45%,#e2e3e8 100%);color:#241f16;font-family:'Space Mono',monospace;position:relative;overflow:hidden;">
+          <canvas ref="{{ noiseRef }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.9;pointer-events:none;"></canvas>
+          <div style="position:relative;">
+            <canvas ref="{{ caScrollRef }}" data-color="rgba(48,48,72,0.26)" style="position:absolute;top:0;left:0;width:100%;height:140px;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%);pointer-events:none;"></canvas>
+            <div style="position:relative;padding:20px 20px 0;text-align:center;">
+              <div style="display:flex;justify-content:space-between;align-items:center;text-align:left;">
+                <a href="#" style="font:800 13px 'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(250,246,238,0.85);color:#241f16;padding:4px 9px;border-radius:20px;border:2px solid #ff6b4a;text-decoration:none;">About</a>
+                <span style="font-size:11px;color:#241f16;background:rgba(250,246,238,0.85);padding:6px 10px;border-radius:20px;border:2px solid #ff6b4a;">Menu</span>
+              </div>
+              <div style="padding:32px 0 0;">
+                <h1 style="font:800 30px/1.1 'Bricolage Grotesque',sans-serif;margin:0 0 12px;"><span style="background:#ff6b4a;color:#241f16;padding:2px 7px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">Jorge Mifsut Benet</span></h1>
+                <p style="font-size:11.5px;margin:0 0 16px;color:#4a453c;">PHD CANDIDATE — ISIR, SORBONNE UNIVERSITÉ, PARIS</p>
+                <p style="font-family:Inter,sans-serif;font-size:14px;line-height:1.6;margin:0 auto 18px;color:#241f16;">Machine-learning surrogate methods for dynamical systems: physics-aware neural networks, chaotic dynamics, bifurcations, uncertainty quantification.</p>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-bottom:20px;">
+                  <span style="font-size:10.5px;border:2px solid #241f16;padding:3px 8px;font-family:'Space Mono',monospace;">AI4PHYSICS</span>
+                  <span style="font-size:10.5px;border:2px solid #241f16;padding:3px 8px;font-family:'Space Mono',monospace;">BIFURCATIONS &amp; CHAOS</span>
+                  <span style="font-size:10.5px;border:2px solid #241f16;padding:3px 8px;font-family:'Space Mono',monospace;">UQ</span>
+                    <span style="font-size:10.5px;border:2px solid #241f16;padding:3px 8px;font-family:'Space Mono',monospace;">GENERATIVE MODELS</span>
+                </div>
+                <div style="font-family:Inter,sans-serif;font-size:11px;color:#4a453c;margin-bottom:24px;">Email · Scholar · ORCID · GitHub</div>
+                <div style="border:3px solid #241f16;box-shadow:5px 5px 0 #303048;background:rgba(255,255,255,0.55);padding:6px;max-width:220px;margin:0 auto;">
+                  <img src="uploads/1707048372541 copy Background Removed-3ff5b64d.png" style="width:100%;height:190px;object-fit:cover;display:block;">
+                </div>
+              </div>
+<div style="margin-top:36px;">
+                <div style="display:flex;align-items:baseline;justify-content:center;gap:10px;margin-bottom:12px;">
+                  <h2 style="font:800 13px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">News</h2>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:10px;text-align:left;margin-bottom:28px;">
+                  <div><span style="display:block;font-family:'Space Mono',monospace;font-size:10px;color:#ff6b4a;margin-bottom:2px;">AUG 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:11px;line-height:1.4;color:#241f16;">News item goes here</span></div>
+                  <div><span style="display:block;font-family:'Space Mono',monospace;font-size:10px;color:#ff6b4a;margin-bottom:2px;">JUN 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:11px;line-height:1.4;color:#241f16;">News item goes here</span></div>
+                  <div><span style="display:block;font-family:'Space Mono',monospace;font-size:10px;color:#ff6b4a;margin-bottom:2px;">MAR 2026</span><span style="display:block;font-family:Inter,sans-serif;font-size:11px;line-height:1.4;color:#241f16;">News item goes here</span></div>
+                </div>
+                <div style="display:flex;align-items:baseline;justify-content:center;gap:10px;margin-bottom:14px;">
+                  <h2 style="font:800 13px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">Selected Works</h2>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:14px;text-align:left;">
+                  <a href="Publications.dc.html" style="border:3px solid #241f16;background:rgba(255,255,255,0.7);box-shadow:5px 5px 0 rgba(36,31,22,0.9);text-decoration:none;color:inherit;display:flex;gap:0;overflow:hidden;">
+                    <img src="uploads/quad.gif" style="width:80px;height:80px;flex:0 0 80px;object-fit:contain;display:block;background:#000;">
+                    <div style="padding:10px 12px;min-width:0;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:12.5px;line-height:1.3;">TORNADO: Adaptive Latent Stochastic Transport for Calibrated Probabilistic PDE Forecasting</span></div>
+                  </a>
+                  <a href="Publications.dc.html" style="border:3px solid #241f16;background:rgba(255,255,255,0.7);box-shadow:5px 5px 0 rgba(36,31,22,0.9);text-decoration:none;color:inherit;display:flex;gap:0;overflow:hidden;">
+                    <img src="uploads/animated_pred_ci_km_flow_cone_km_flow_42_alldet_2026-01-22T11-43-08.gif" style="width:80px;height:80px;flex:0 0 80px;object-fit:contain;display:block;background:#000;">
+                    <div style="padding:10px 12px;min-width:0;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:12.5px;line-height:1.3;">Adaptive SDE Interpolants for Calibrated Probabilistic PDE Forecasting</span></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:0 20px;box-sizing:border-box;margin-top:32px;"><div style="width:100%;height:2px;background:#241f16;opacity:0.15;"></div></div>
+          <canvas ref="{{ gliderGunRef }}" data-color="rgba(48,48,72,0.7)" style="position:relative;width:100%;height:40px;display:block;margin-top:18px;"></canvas>
+        </div>
+      </x-import>
+    </div>
+
+  </div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:20px;">
+  <h2 style="margin:0;font-size:20px;color:#3a352c;">Turn 16 — riffs on 15a's photo-sampled palette</h2>
+  <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;">
+
+    <!-- 16a -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="16a" style="background:#241f16;color:#fff;font:600 12px/1 monospace;padding:4px 8px;border-radius:4px;">16a</span>
+        <span style="font-size:15px;font-weight:600;color:#3a352c;">Softer, lower saturation (current lead)</span>
+      </div>
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" url="jorgemifsut.com" width="1000" height="1040" hint-size="1000px,1040px">
+        <div style="width:1000px;min-height:1040px;background:linear-gradient(150deg,#faf6ee 0%,#f5e5d8 45%,#e2e3e8 100%);color:#241f16;font-family:'Space Mono',monospace;position:relative;border:4px solid #241f16;box-sizing:border-box;overflow:hidden;">
+          <canvas ref="{{ noiseRef }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.9;pointer-events:none;"></canvas>
+          <div style="position:relative;">
+            <canvas ref="{{ caScrollRef }}" data-color="rgba(48,48,72,0.26)" style="position:absolute;top:0;left:0;width:100%;height:250px;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%);pointer-events:none;"></canvas>
+            <div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding:16px 28px;">
+              <a href="#" style="font:800 14px 'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(250,246,238,0.85);color:#241f16;padding:4px 10px;border-radius:20px;border:2px solid #ff6b4a;border-width:4px;text-decoration:none;">About</a>
+              <nav style="display: flex; gap: 22px; font-size: 12.5px; color: #241f16; background: rgba(250,246,238,0.85); padding: 8px 16px; border-radius: 20px; border: 2px solid #ff6b4a; border-width: 4px">
+                <a href="CV.dc.html">CV</a><a href="Publications.dc.html">Publications</a><a href="Blog.dc.html">Blog</a><a href="Misc.dc.html">Misc</a>
+              </nav>
+            </div>
+            <div style="position:relative;padding:44px 40px 0;display:grid;grid-template-columns:1fr 300px;gap:44px;align-items:start;">
+              <div>
+                <h1 style="font:800 50px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 16px;"><span style="background:#ff6b4a;color:#241f16;padding:2px 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">Jorge Mifsut Benet</span></h1>
+                <p style="font-size:13px;margin:0 0 20px;color:#4a453c;">PHD CANDIDATE — ISIR, SORBONNE UNIVERSITÉ, PARIS</p>
+                <p style="font-family:Inter,sans-serif;font-size:15px;line-height:1.6;margin:0 0 22px;color:#241f16;max-width:440px;">Machine-learning surrogate methods for dynamical systems: physics-aware neural networks, chaotic dynamics, bifurcations, uncertainty quantification. Previously: BSc Physics (Valencia), MSc Complex Adaptive Systems (Chalmers).</p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">AI4PHYSICS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">BIFURCATIONS &amp; CHAOS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">UQ</span>
+                    <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">GENERATIVE MODELS</span>
+                </div>
+                <div style="font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Email · Scholar · ORCID · GitHub · LinkedIn · X</div>
+              </div>
+              <div style="border:3px solid #241f16;box-shadow:6px 6px 0 #303048;background:rgba(255,255,255,0.55);padding:8px;">
+                <img src="uploads/1707048372541 copy Background Removed-3ff5b64d.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;margin-top:52px;padding:0 40px;">
+            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:18px;">
+              <h2 style="font:800 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">Selected Works</h2>
+              <div style="flex:1;height:2px;background:#241f16;opacity:0.15;"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+              <a href="#" style="border:2px solid #241f16;background:rgba(255,255,255,0.55);text-decoration:none;color:inherit;display:block;">
+                <div style="border-bottom:2px solid #241f16;overflow:hidden;"><img src="uploads/stochastic_interpolant.png" style="width:100%;height:150px;object-fit:cover;display:block;"></div>
+                <div style="padding:14px 16px;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;">Stochastic Interpolants</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Denoising steps toward a target distribution</span></div>
+              </a>
+              <a href="#" style="border:2px solid #241f16;background:rgba(255,255,255,0.55);text-decoration:none;color:inherit;display:block;">
+                <div style="border-bottom:2px solid #241f16;overflow:hidden;"><img src="uploads/cone_era5_42_era5_tornado_sig0.1_ed3.0_long_job_541534_v10_member0.gif" style="width:100%;height:150px;object-fit:cover;display:block;"></div>
+                <div style="padding:14px 16px;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;">ERA5 Surrogate Ensemble</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Learned surface-wind forecasts, member spread</span></div>
+              </a>
+            </div>
+          </div>
+          <canvas ref="{{ gliderGunRef }}" data-color="rgba(48,48,72,0.7)" style="position:relative;width:100%;height:46px;display:block;margin-top:34px;margin-bottom:0;"></canvas>
+        </div>
+      </x-import>
+    </div>
+
+    <!-- 16b -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="16b" style="background:#241f16;color:#fff;font:600 12px/1 monospace;padding:4px 8px;border-radius:4px;">16b</span>
+        <span style="font-size:15px;font-weight:600;color:#3a352c;">Same as 15a, more saturated</span>
+      </div>
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" url="jorgemifsut.com" width="1000" height="1040" hint-size="1000px,1040px">
+        <div style="width:1000px;min-height:1040px;background:linear-gradient(150deg,#faf6ee 0%,#e9b791 45%,#a9aec4 100%);color:#241f16;font-family:'Space Mono',monospace;position:relative;border:4px solid #241f16;box-sizing:border-box;overflow:hidden;">
+          <canvas ref="{{ noiseRef }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.9;pointer-events:none;"></canvas>
+          <div style="position:relative;">
+            <canvas ref="{{ caScrollRef }}" data-color="rgba(48,48,72,0.4)" style="position:absolute;top:0;left:0;width:100%;height:250px;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%);pointer-events:none;"></canvas>
+            <div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding:16px 28px;">
+              <a href="#" style="font:800 14px 'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(250,246,238,0.85);color:#241f16;padding:4px 10px;border-radius:20px;border:2px solid #ff6b4a;border-width:4px;text-decoration:none;">About</a>
+              <nav style="display: flex; gap: 22px; font-size: 12.5px; color: #241f16; background: rgba(250,246,238,0.85); padding: 8px 16px; border-radius: 20px; border: 2px solid #ff6b4a; border-width: 4px">
+                <a href="CV.dc.html">CV</a><a href="Publications.dc.html">Publications</a><a href="Blog.dc.html">Blog</a><a href="Misc.dc.html">Misc</a>
+              </nav>
+            </div>
+            <div style="position:relative;padding:44px 40px 0;display:grid;grid-template-columns:1fr 300px;gap:44px;align-items:start;">
+              <div>
+                <h1 style="font:800 50px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 16px;"><span style="background:#ff6b4a;color:#241f16;padding:2px 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">Jorge Mifsut Benet</span></h1>
+                <p style="font-size:13px;margin:0 0 20px;color:#4a453c;">PHD CANDIDATE — ISIR, SORBONNE UNIVERSITÉ, PARIS</p>
+                <p style="font-family:Inter,sans-serif;font-size:15px;line-height:1.6;margin:0 0 22px;color:#241f16;max-width:440px;">Machine-learning surrogate methods for dynamical systems: physics-aware neural networks, chaotic dynamics, bifurcations, uncertainty quantification. Previously: BSc Physics (Valencia), MSc Complex Adaptive Systems (Chalmers).</p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">AI4PHYSICS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">BIFURCATIONS &amp; CHAOS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">UQ</span>
+                    <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">GENERATIVE MODELS</span>
+                </div>
+                <div style="font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Email · Scholar · ORCID · GitHub · LinkedIn · X</div>
+              </div>
+              <div style="border:3px solid #241f16;box-shadow:6px 6px 0 #303048;background:rgba(255,255,255,0.55);padding:8px;">
+                <img src="uploads/1707048372541 copy Background Removed-3ff5b64d.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;margin-top:52px;padding:0 40px;">
+            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:18px;">
+              <h2 style="font:800 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">Selected Works</h2>
+              <div style="flex:1;height:2px;background:#241f16;opacity:0.15;"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+              <a href="#" style="border:2px solid #241f16;background:rgba(255,255,255,0.55);text-decoration:none;color:inherit;display:block;">
+                <div style="border-bottom:2px solid #241f16;overflow:hidden;"><img src="uploads/stochastic_interpolant.png" style="width:100%;height:150px;object-fit:cover;display:block;"></div>
+                <div style="padding:14px 16px;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;">Stochastic Interpolants</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Denoising steps toward a target distribution</span></div>
+              </a>
+              <a href="#" style="border:2px solid #241f16;background:rgba(255,255,255,0.55);text-decoration:none;color:inherit;display:block;">
+                <div style="border-bottom:2px solid #241f16;overflow:hidden;"><img src="uploads/cone_era5_42_era5_tornado_sig0.1_ed3.0_long_job_541534_v10_member0.gif" style="width:100%;height:150px;object-fit:cover;display:block;"></div>
+                <div style="padding:14px 16px;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;">ERA5 Surrogate Ensemble</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Learned surface-wind forecasts, member spread</span></div>
+              </a>
+            </div>
+          </div>
+          <canvas ref="{{ gliderGunRef }}" data-color="rgba(48,48,72,0.7)" style="position:relative;width:100%;height:46px;display:block;margin-top:34px;margin-bottom:0;"></canvas>
+        </div>
+      </x-import>
+    </div>
+
+    <!-- 16c -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="16c" style="background:#241f16;color:#fff;font:600 12px/1 monospace;padding:4px 8px;border-radius:4px;">16c</span>
+        <span style="font-size:15px;font-weight:600;color:#3a352c;">Navy pushed deeper/cooler, peach kept mid</span>
+      </div>
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx" url="jorgemifsut.com" width="1000" height="1040" hint-size="1000px,1040px">
+        <div style="width:1000px;min-height:1040px;background:linear-gradient(150deg,#faf6ee 0%,#f0d3bc 45%,#b7bcd6 100%);color:#241f16;font-family:'Space Mono',monospace;position:relative;border:4px solid #241f16;box-sizing:border-box;overflow:hidden;">
+          <canvas ref="{{ noiseRef }}" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.9;pointer-events:none;"></canvas>
+          <div style="position:relative;">
+            <canvas ref="{{ caScrollRef }}" data-color="rgba(30,30,60,0.36)" style="position:absolute;top:0;left:0;width:100%;height:250px;-webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 100%);mask-image:linear-gradient(to bottom, black 50%, transparent 100%);pointer-events:none;"></canvas>
+            <div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding:16px 28px;">
+              <a href="#" style="font:800 14px 'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(250,246,238,0.85);color:#241f16;padding:4px 10px;border-radius:20px;border:2px solid #ff6b4a;border-width:4px;text-decoration:none;">About</a>
+              <nav style="display: flex; gap: 22px; font-size: 12.5px; color: #241f16; background: rgba(250,246,238,0.85); padding: 8px 16px; border-radius: 20px; border: 2px solid #ff6b4a; border-width: 4px">
+                <a href="CV.dc.html">CV</a><a href="Publications.dc.html">Publications</a><a href="Blog.dc.html">Blog</a><a href="Misc.dc.html">Misc</a>
+              </nav>
+            </div>
+            <div style="position:relative;padding:44px 40px 0;display:grid;grid-template-columns:1fr 300px;gap:44px;align-items:start;">
+              <div>
+                <h1 style="font:800 50px/1.05 'Bricolage Grotesque',sans-serif;margin:0 0 16px;"><span style="background:#ff6b4a;color:#241f16;padding:2px 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone;">Jorge Mifsut Benet</span></h1>
+                <p style="font-size:13px;margin:0 0 20px;color:#4a453c;">PHD CANDIDATE — ISIR, SORBONNE UNIVERSITÉ, PARIS</p>
+                <p style="font-family:Inter,sans-serif;font-size:15px;line-height:1.6;margin:0 0 22px;color:#241f16;max-width:440px;">Machine-learning surrogate methods for dynamical systems: physics-aware neural networks, chaotic dynamics, bifurcations, uncertainty quantification. Previously: BSc Physics (Valencia), MSc Complex Adaptive Systems (Chalmers).</p>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">AI4PHYSICS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">BIFURCATIONS &amp; CHAOS</span>
+                  <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">UQ</span>
+                    <span style="font-size:11.5px;border:2px solid #241f16;padding:4px 10px;font-family:'Space Mono',monospace;">GENERATIVE MODELS</span>
+                </div>
+                <div style="font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Email · Scholar · ORCID · GitHub · LinkedIn · X</div>
+              </div>
+              <div style="border:3px solid #241f16;box-shadow:6px 6px 0 #1e1e3c;background:rgba(255,255,255,0.55);padding:8px;">
+                <img src="uploads/1707048372541 copy Background Removed-3ff5b64d.png" style="width:100%;height:320px;object-fit:cover;display:block;">
+              </div>
+            </div>
+          </div>
+          <div style="position:relative;margin-top:52px;padding:0 40px;">
+            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:18px;">
+              <h2 style="font:800 15px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0;">Selected Works</h2>
+              <div style="flex:1;height:2px;background:#241f16;opacity:0.15;"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+              <a href="#" style="border:2px solid #241f16;background:rgba(255,255,255,0.55);text-decoration:none;color:inherit;display:block;">
+                <div style="border-bottom:2px solid #241f16;overflow:hidden;"><img src="uploads/stochastic_interpolant.png" style="width:100%;height:150px;object-fit:cover;display:block;"></div>
+                <div style="padding:14px 16px;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;">Stochastic Interpolants</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Denoising steps toward a target distribution</span></div>
+              </a>
+              <a href="#" style="border:2px solid #241f16;background:rgba(255,255,255,0.55);text-decoration:none;color:inherit;display:block;">
+                <div style="border-bottom:2px solid #241f16;overflow:hidden;"><img src="uploads/cone_era5_42_era5_tornado_sig0.1_ed3.0_long_job_541534_v10_member0.gif" style="width:100%;height:150px;object-fit:cover;display:block;"></div>
+                <div style="padding:14px 16px;"><span style="display:block;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;">ERA5 Surrogate Ensemble</span><span style="display:block;font-family:Inter,sans-serif;font-size:12.5px;color:#4a453c;">Learned surface-wind forecasts, member spread</span></div>
+              </a>
+            </div>
+          </div>
+          <canvas ref="{{ gliderGunRef }}" data-color="rgba(30,30,60,0.7)" style="position:relative;width:100%;height:46px;display:block;margin-top:34px;margin-bottom:0;"></canvas>
+        </div>
+      </x-import>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="#a3512a"></rect><text x="50" y="58" font-size="34" text-anchor="middle" fill="#fff" font-family="serif">JM</text></svg>
+</template>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.intervals = [];
+    this.observer = null;
+    this.gated = new Map();
+    this.caScrollRef = (el) => this.registerGated(el, 'ca');
+    this.golContLeftRef = (el) => this.registerGated(el, 'gol');
+    this.golContRightRef = (el) => this.registerGated(el, 'gol');
+    this.noiseRef = (el) => { if (el && !el.dataset.drawn) { el.dataset.drawn = '1'; this.startNoise(el); } };
+    this.gliderGunRef = (el) => this.registerGated(el, 'gun');
+  }
+  registerGated(el, kind) {
+    if (!el || el.dataset.gated) return;
+    el.dataset.gated = '1';
+    this.gated.set(el, { kind, running: false, stop: null });
+    if (!this.observer) {
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const info = this.gated.get(entry.target);
+          if (!info) return;
+          if (entry.isIntersecting && !info.running) {
+            info.running = true;
+            info.stop = this.startGated(entry.target, info.kind);
+          } else if (!entry.isIntersecting && info.running) {
+            info.running = false;
+            if (info.stop) info.stop();
+            info.stop = null;
+          }
+        });
+      }, { rootMargin: '200px' });
+    }
+    this.observer.observe(el);
+  }
+  startGated(el, kind) {
+    const color = el.dataset.color;
+    if (kind === 'ca') return this.startCAScroll(el, color || '#ff5033');
+    if (kind === 'gol') return this.startGolCont(el, color || 'rgba(139,127,255,0.55)');
+    if (kind === 'gun') return this.startGliderGun(el, color || 'rgba(28,28,28,0.6)');
+  }
+  trackInterval(id) {
+    this.intervals.push(id);
+    return () => { clearInterval(id); this.intervals = this.intervals.filter(i => i !== id); };
+  }
+  startGliderGun(canvas, color) {
+    // pulsar: classic period-3 oscillator, sits static and centered, just blinks
+    const cssH = canvas.clientHeight || 44;
+    const cols = Math.max(60, Math.floor((canvas.clientWidth || 900) / 5));
+    const rows = Math.max(13, Math.floor(cssH / 3));
+    const cell = cssH / rows;
+    canvas.width = cols * cell;
+    canvas.height = rows * cell;
+    const ctx = canvas.getContext('2d');
+    const pulsar = [];
+    const near = [-4, -3, -2, 2, 3, 4], far = [-6, -1, 1, 6];
+    far.forEach(r => near.forEach(c => { pulsar.push([r, c]); pulsar.push([c, r]); }));
+    const rowOff = Math.floor(rows / 2), colOff = Math.floor(cols / 2);
+    let grid = Array.from({ length: rows }, () => new Uint8Array(cols));
+    pulsar.forEach(([dr, dc]) => {
+      const r = rowOff + dr, c = colOff + dc;
+      if (r >= 0 && r < rows && c >= 0 && c < cols) grid[r][c] = 1;
+    });
+    const step = () => {
+      const next = Array.from({ length: rows }, () => new Uint8Array(cols));
+      for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) {
+        let n = 0;
+        for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+          if (!dx && !dy) continue;
+          const yy = y + dy, xx = x + dx;
+          if (yy >= 0 && yy < rows && xx >= 0 && xx < cols) n += grid[yy][xx];
+        }
+        next[y][x] = grid[y][x] ? (n === 2 || n === 3 ? 1 : 0) : (n === 3 ? 1 : 0);
+      }
+      grid = next;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = color;
+      for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) if (grid[y][x]) ctx.fillRect(x * cell + 0.5, y * cell + 0.5, cell - 1, cell - 1);
+    };
+    step();
+    const id = setInterval(step, 300);
+    return this.trackInterval(id);
+  }
+  componentWillUnmount() {
+    this.intervals.forEach(clearInterval);
+    if (this.observer) this.observer.disconnect();
+  }
+  startCAScroll(canvas, color) {
+    const cell = 2.5;
+    const cols = Math.max(60, Math.floor(canvas.clientWidth / cell) || 200);
+    const rows = Math.max(16, Math.floor((canvas.clientHeight || 96) / cell));
+    canvas.width = cols * cell;
+    canvas.height = rows * cell;
+    const ctx = canvas.getContext('2d');
+    let row = new Uint8Array(cols);
+    for (let c = 0; c < cols; c++) row[c] = Math.random() < 0.5 ? 1 : 0;
+    const rule = 30;
+    let history = [];
+    const redraw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = color;
+      for (let r = 0; r < history.length; r++) {
+        const rr = history[r];
+        for (let c = 0; c < cols; c++) if (rr[c]) ctx.fillRect(c * cell, r * cell, cell - 0.7, cell - 0.7);
+      }
+    };
+    const tick = () => {
+      history.push(row);
+      if (history.length > rows) history.shift();
+      redraw();
+      const next = new Uint8Array(cols);
+      for (let c = 0; c < cols; c++) {
+        const l = row[(c - 1 + cols) % cols], m = row[c], r2 = row[(c + 1) % cols];
+        next[c] = (rule >> ((l << 2) | (m << 1) | r2)) & 1;
+      }
+      row = next;
+      if (!row.some(v => v)) row[Math.floor(Math.random() * cols)] = 1;
+    };
+    for (let i = 0; i < rows; i++) tick();
+    const id = setInterval(tick, 90);
+    return this.trackInterval(id);
+  }
+  startGolCont(canvas, color) {
+    const cell = 4;
+    const cols = Math.max(6, Math.floor(canvas.clientWidth / cell));
+    const rows = Math.max(20, Math.floor(canvas.clientHeight / cell));
+    canvas.width = cols * cell;
+    canvas.height = rows * cell;
+    const ctx = canvas.getContext('2d');
+    let grid = Array.from({ length: rows }, () => Array.from({ length: cols }, () => (Math.random() < 0.36 ? 1 : 0)));
+    const step = () => {
+      let alive = 0;
+      const next = grid.map(r => r.slice());
+      for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) {
+        let n = 0;
+        for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+          if (!dx && !dy) continue;
+          n += grid[(y + dy + rows) % rows][(x + dx + cols) % cols];
+        }
+        next[y][x] = grid[y][x] ? (n === 2 || n === 3 ? 1 : 0) : (n === 3 ? 1 : 0);
+        if (next[y][x]) alive++;
+      }
+      grid = next;
+      if (alive < cols * rows * 0.14) {
+        for (let k = 0; k < cols * rows * 0.18; k++) grid[Math.floor(Math.random() * rows)][Math.floor(Math.random() * cols)] = 1;
+      }
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = color;
+      for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) if (grid[y][x]) {
+        ctx.fillRect(x * cell + 0.5, y * cell + 0.5, cell - 1, cell - 1);
+      }
+    };
+    step();
+    const id = setInterval(step, 220);
+    return this.trackInterval(id);
+  }
+  startNoise(canvas) {
+    const w = Math.max(1, Math.round(canvas.clientWidth || 1000));
+    const h = Math.max(1, Math.round(canvas.clientHeight || 1000));
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    const img = ctx.createImageData(w, h);
+    for (let i = 0; i < img.data.length; i += 4) {
+      const v = 90 + Math.random() * 130;
+      img.data[i] = v; img.data[i + 1] = v; img.data[i + 2] = v;
+      img.data[i + 3] = Math.random() < 0.5 ? 0 : Math.random() * 14 + 2;
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+  renderVals() {
+    return {
+      caScrollRef: this.caScrollRef, golContLeftRef: this.golContLeftRef, golContRightRef: this.golContRightRef,
+      noiseRef: this.noiseRef, gliderGunRef: this.gliderGunRef
+    };
+  }
+}
+</script>
+</body>
+</html>
